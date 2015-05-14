@@ -1,0 +1,10 @@
+Student Name: Brian Friesner
+Course: Front End Web Developer
+Project: (3) Arcade Game
+
+Resources used:
+(1) Udacity Javascript Style Guide
+(2) JS Lint
+(3) Google searches
+(4) http://www.w3schools.com/
+(5) Stack Overflow
