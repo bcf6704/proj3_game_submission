@@ -92,14 +92,14 @@ Player.prototype.render = function() {
 };
 
 Player.prototype.handleInput = function(key) {
-    if (key === 'left' && this.x > 10) {
-        this.x = this.x - 85;
-    } else if (key === 'right' && this.x < 400) {
-        this.x = this.x + 85;
-    } else if (key === 'up' && this.y > 25) {
-        this.y = this.y - 85;
-    } else if (key === 'down' && this.y < 430) {
-        this.y = this.y + 85;
+    if (key === 'left' && this.x > 40) {
+        this.x = this.x - 101;
+    } else if (key === 'right' && this.x < 360) {
+        this.x = this.x + 101;
+    } else if (key === 'up' && this.y > 50) {
+        this.y = this.y - 83;
+    } else if (key === 'down' && this.y < 400) {
+        this.y = this.y + 83;
     }
 };
 
@@ -110,12 +110,11 @@ Player.prototype.reset = function() {
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
-var bug1 = new Enemy();
-var bug2 = new Enemy();
-var bug3 = new Enemy();
-var bug4 = new Enemy();
-var bug5 = new Enemy();
-var allEnemies = [bug1, bug2, bug3, bug4, bug5];
+var allEnemies = [];
+for (i = 0; i < 5; i++) { 
+    allEnemies.push(new Enemy());
+}
+
 // Place the player object in a variable called player
 var player = new Player();
 
